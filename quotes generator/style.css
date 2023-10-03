@@ -1,0 +1,16 @@
+header {
+  color: white;
+  background-color: black;
+  font-size: 25px;
+  text-align: center;
+}
+
+p {
+  color: rgb(97, 94, 94);
+}
+
+.quote-area {
+  color: blue;
+  background-color: rgb(189, 187, 187);
+  font-size: 23px;
+}

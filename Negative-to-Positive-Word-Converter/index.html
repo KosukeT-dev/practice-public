@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Negative to Positive Word Converter</title>
+</head>
+<body>
+  <h1>Negative to Positive Word Converter</h1>
+  <p>Enter a negative word in the input field below to convert it to a positive word:</p>
+  <input type="text" id="inputField" placeholder="enter text...">
+  <button onclick="convertWord()">Convert</button>
+  <p id="output"></p>
+
+  <script>
+    function convertWord() {
+      // Get the value of the input field
+      const input = document.getElementById("inputField").value;
+
+      // Use a switch statement to convert the negative word to a positive word
+      let output;
+      switch (input.toLowerCase()) {
+        case "sad":
+          output = "happy";
+          break;
+        case "angry":
+          output = "calm";
+          break;
+        case "afraid":
+          output = "brave";
+          break;
+        case "tired":
+          output = "energetic";
+          break;
+        case "bad":
+          output = "good";
+          break; 
+        case "crazy":
+          output = "sane";
+          break;
+        case "nervous":
+          output = "relaxed";
+          break; 
+        case "disappointed":
+          output = "encourage";
+          break;     
+        default:
+          output = "Sorry, I can't convert that word.";
+      }
+
+      // Set the output text
+      document.getElementById("output").textContent = output;
+    }
+  </script>
+</body>
+</html>
